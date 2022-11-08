@@ -1,0 +1,70 @@
+.wrap {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.train {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    width: 700%;
+    transform: translateX(0px);
+    transition: .5s;
+    margin: 0;
+}
+
+.train li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-dots li {
+    width: 40px;
+    height: 10px;
+    border: 1px solid #fff;
+    margin: 0 4px;
+}
+
+.slider-dots li.active{
+    background-color: #fff;
+}
+
+.page-left-area,
+.page-right-area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+
+.page-left-area {
+    left: 0;
+}
+
+.page-right-area {
+    right: 0;
+}
+
+.page-left-area:hover,
+.page-right-area:hover {
+    background-color: rgba(255, 255, 255, 0.355);
+}
